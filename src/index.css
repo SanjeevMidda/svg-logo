@@ -1,0 +1,48 @@
+* {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  flex-direction: column;
+}
+
+svg {
+  width: 100%;
+}
+
+#orangeSphere {
+  animation: rotateForwards 5s linear infinite;
+  transform-origin: center;
+}
+
+#greySphere {
+  animation: rotateBackwards 3s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotateForwards {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotateBackwards {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+  animation: rotateBackwards 3s linear infinite;
+  transform-origin: center;
+
+  margin-top: -90px;
+  font-size: 20px;
+  color: white;
+}
